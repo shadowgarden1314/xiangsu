@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 基础信息 -->
+    <html lang="zh-cmn-Hans">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="LQBBYの主页">
+    <meta name="keywords" content="LQBBY,个人主页">
+    <meta name="author" content="LQBBY">
+    <title>无上暗影君王の主页</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./js/bj.js">
+    <!--引入SweetAlert
+    <script src="https://fastly.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>-->
+    <script src="https://fastly.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+    <!--引入izitoast-->
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+    <script type="text/javascript"
+        src="https://fastly.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+    <!--引入fontawesome-->
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css"
+        media="all">
+    <!--科技炫酷按钮-->
+    <link rel="stylesheet" type="text/css" href="./css/sey.css">
+    <!--LQ网站监控-->
+    <script async defer data-website-id="1e581f81-4a95-4be4-8449-c74742cf2475"
+        src="https://wz.lqbby.com/umami.js"></script>
+    <!--IE淘汰计划-->
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href = "https://imsyy.top/upgrade-your-browser/index.html?referrer=" + encodeURIComponent(window.location.href);</script>
+</head>
+
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+    <!--<span class="mobile btn-mobile-menu">
+        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+        <i class="social iconfont icon-ngleup btn-mobile-close__icon hidden"></i>
+    </span>-->
+    <header id="panel" class="panel-cover"
+        style="background: url(./images/kj.webp) center center / cover no-repeat rgb(102, 102, 102);">
+        <!--星空背景-->
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <!--天气-->
+        <div id="he-plugin-simple"></div>
+        <script>
+            WIDGET = {
+                "CONFIG": {
+                    "modules": "01234",
+                    "background": "5",
+                    "tmpColor": "FFFFFF",
+                    "tmpSize": "16",
+                    "cityColor": "FFFFFF",
+                    "citySize": "16",
+                    "aqiColor": "FFFFFF",
+                    "aqiSize": "16",
+                    "weatherIconSize": "24",
+                    "alertIconSize": "18",
+                    "padding": "10px 10px 10px 10px",
+                    "shadow": "1",
+                    "language": "auto",
+                    "borderRadius": "10",
+                    "fixed": "false",
+                    "vertical": "top",
+                    "horizontal": "left",
+                    "key": "自己注册获取key"
+                }
+            }
+        </script>
+        <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div class="ih-item circle effect right_to_left">
+                        <a class="blog-button">
+                            <div class="img"> <img src="./images/1.png" alt="img"
+                                    class="js-avatar iUp profilepic header-logo">
+                            </div>
+                            <div class="info iUp">
+                                <div class="info-back">
+                                    <img alt="img" src="./images/kl.gif" class="js-avatar profilepic">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <br />无上暗影君王
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">be your true self</p>
+                    <canvas class="navigation-wrapper iUp" id="canvas" style="width:50%;padding-top:0px;" width="920"
+                        height="350"></canvas>
+                    <script src="./js/clock.js"></script>
+                    <hr class="iUp" />
+                    <!--一言无法显示时的文字-->
+                    <p id="description" class="panel-cover__description iUp">每一个人都应该明确自己的方向和位置
+                        <br />
+                        <strong>-「LQBBY」</strong>
+                    </p>
+                    <div class="navigation-wrapper iUp">
+                        <div>
+                            <nav class="cover-navigation cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://blog.hellowold.dynv6.net/"
+                                            style="--clr:#1e9bff"><span>Alan博客</span><i></i></a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://hexo.hellowold.dynv6.net/"
+                                            style="--clr:#f85d5d"><span>个人博客</span><i></i></a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://web.hellowold.dynv6.net/"
+                                            style="--clr:#ff1867"><span>导航网页</span><i></i></a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://gemini.hellowold.dynv6.net/" 
+										    style="--clr:#ebe417"><span>Gemini</span><i></i></a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://google.hellowold.dynv6.net/"
+                                            style="--clr:#eb2feb"><span>国内谷歌</span><i></i></a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://music.hellowold.dynv6.net/"
+                                            style="--clr:#28a745"><span>网易云音乐</span><i></i></a>
+                                    </li>
+								     <li class="navigation__item">
+                                        <a href="https://winter.hellowold.dynv6.net/"
+                                            style="--clr:#E9C2A6"><span>特效主页</span><i></i></a>
+                                    </li>
+									<li class="navigation__item">
+                                        <a href="https://study.hellowold.dynv6.net/"
+                                            style="--clr:#7FFF00"><span>学习主页</span><i></i></a>
+                                    </li>
+									<li class="navigation__item">
+                                        <a href="https://english.hellowold.dynv6.net/"
+                                            style="--clr:#D98719"><span>英语练习</span><i></i></a>
+                                    </li>
+									
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="iUp">
+                            <nav class="cover-navigation navigation--social">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://github.com/shadowgarden1314" title="Github" target="_blank">
+                                            <j class="iconfont icon-github"></j>
+                                            <span class="label">Github</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://" title="Telegram" target="_blank">
+                                            <j class="fab fa-telegram-plane"></j>
+                                            <span class="label">Telegram</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://" title="Twitter" target="_blank">
+                                            <j class="fab fa-twitter"></j>
+                                            <span class="label">Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://"
+                                            title="QQ" target="_blank">
+                                            <j class="fab fa-qq"></j>
+                                            <span class="label">QQ</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a onClick="weixin()" title="微信" target="_blank">
+                                            <j class="fab fa-weixin"></j>
+                                            <script>
+                                                function weixin() {
+                                                    Swal.fire({
+                                                        title: "请扫码",
+                                                        text: "请使用微信扫一扫",
+                                                        confirmButtonText: "好的",
+                                                        imageUrl: "./images/weixin1.png",
+                                                        imageWidth: 150,
+                                                        imageHeight: 150
+                                                    })
+                                                }
+                                            </script>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="" title="Email">
+                                            <j class="fas fa-envelope"></j>
+                                            <span class="label">Email</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+        <div class="remark iUp">
+            <p class="power">Copyright © 2023
+                <script>document.write(' - ' + (new Date()).getFullYear())</script> Shadow
+            </p>
+        </div>
+    </header>
+    <!--黑暗主题-->
+
+
+
+
+    <!--izitoast弹窗设置
+    <script>
+        iziToast.settings({
+            timeout: 4000,
+            icon: 'Fontawesome',
+            closeOnEscape: 'true',
+            position: 'topRight',
+            transitionOut: 'fadeOutRight',
+            displayMode: '2',
+            layout: '2',
+            transitionIn: 'bounceInLeft',
+        });
+    <script>
+    
+        function update() {
+            iziToast.info({
+                icon: 'fad fa-times-octagon',
+                backgroundColor: '#efefef',
+                title: '站点暂时关闭',
+                message: '只是出现了一点小问题 ~'
+            });
+        }
+        -->
+    </script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/fetch.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
